@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Markdown from 'markdown-to-jsx';
 
+
 export default function MdComponent(props) {
     const file_name = props.md_title;
     const [post, setPost] = useState('');
@@ -18,7 +19,7 @@ export default function MdComponent(props) {
     });
 
     return (
-        <div class="font-bold md:container md:mx-auto">
+        <div class="md:container md:mx-auto">
             <Markdown>
                 {post}
             </Markdown>
