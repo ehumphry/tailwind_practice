@@ -1,16 +1,17 @@
 import React from 'react';
-import NavbarMenu from './components/NavbarMenu';
-import MdComponent from './components/MdComponent';
+import { BrowserRouter } from 'react-router-dom';
 import GreyCardContainer from './components/GreyCardContainer';
 import HeaderMenu from './components/HeaderMenu';
+import HelloWorld from './components/HelloWorld';
 
 export default function App() {
   return (
     <>
-    <HeaderMenu/>
-    {/* <NavbarMenu/>  */}
-    <MdComponent md_title = 'firstmd.md'/>
-    <GreyCardContainer />
+    <BrowserRouter>
+      <HeaderMenu/>
+      <HelloWorld/>
+      <GreyCardContainer />
+    </BrowserRouter>
     </>
   )
 }

@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+
 
 const HeaderMenu = () => {
   // Declare a new state variable to store the visibility of the dropdown
@@ -8,7 +11,8 @@ const HeaderMenu = () => {
     <div className="flex flex-wrap items-center justify-between px-4 py-2 bg-gray-900 text-gray-100 shadow-md">
       <div className="font-bold text-xl">People Work</div>
       <div className="hidden md:flex">
-        <a href="#" className="px-3 py-2 rounded-md hover:bg-gray-800">About</a>
+        <Link className="px-3 py-2 rounded-md hover:bg-gray-800" to="/about">About</Link>
+        {/* <a href="#" className="px-3 py-2 rounded-md hover:bg-gray-800">About</a> */}
         <a href="#" className="px-3 py-2 rounded-md hover:bg-gray-800">Contact</a>
         <a href="#" className="px-3 py-2 rounded-md hover:bg-gray-800">Careers</a>
       </div>
