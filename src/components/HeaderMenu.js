@@ -9,12 +9,12 @@ const HeaderMenu = () => {
 
   return (
     <div className="flex flex-wrap items-center justify-between px-4 py-2 bg-gray-900 text-gray-100 shadow-md">
-      <div className="font-bold text-xl">People Work</div>
+      <Link className="font-bold text-xl" to="/">People Work</Link>
       <div className="hidden md:flex">
+        <Link className="px-3 py-2 rounded-md hover:bg-gray-800" to="/">Home</Link>
         <Link className="px-3 py-2 rounded-md hover:bg-gray-800" to="/about">About</Link>
-        {/* <a href="#" className="px-3 py-2 rounded-md hover:bg-gray-800">About</a> */}
-        <a href="#" className="px-3 py-2 rounded-md hover:bg-gray-800">Contact</a>
-        <a href="#" className="px-3 py-2 rounded-md hover:bg-gray-800">Careers</a>
+        <Link className="px-3 py-2 rounded-md hover:bg-gray-800" to="/contact">Contact</Link>
+        
       </div>
       <div className="md:hidden">
         {/* Use the path element in SVG to create a button with three horizontal lines */}
@@ -35,9 +35,9 @@ const HeaderMenu = () => {
           style={{ width: '50%' }}
         >
           <div className="py-1 rounded-md bg-white shadow-xs ">
-            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About</a>
-            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
-            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Careers</a>
+            <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" to="/contact">Home</Link>
+            <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" to="/about">About</Link>
+            <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" to="/contact">Contact</Link>
           </div>
         </div>
       </div>
