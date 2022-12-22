@@ -8,7 +8,7 @@ const GreyCardContainer = () => {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navigate(`/unique/${id}`);
+    navigate(`/career/${id}`, { state: { id } });
   }
 
   return (

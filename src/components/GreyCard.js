@@ -9,8 +9,8 @@ const GreyCard = (props) => {
       style={{ backgroundColor: color, cursor: "pointer" }}
       onClick={() => props.onClick(props.id)}
     >
-      <p className="text-white text-xl font-bold">{props.title}</p>
-      <p className="text-gray-100 mt-2 text-base">{props.description}</p>
+      <p className="text-white text-2xl font-bold">{props.title}</p>
+      {/* <p className="text-gray-100 mt-2 text-base">{props.description}</p> */}
     </div>
   );
 };

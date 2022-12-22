@@ -8,12 +8,12 @@ const HeaderMenu = () => {
   const [isDropdownVisible, setDropdownVisibility] = useState(false);
 
   return (
-    <div className="flex flex-wrap items-center justify-between px-4 py-2 bg-gray-900 text-gray-100 shadow-md">
-      <Link className="font-bold text-xl" to="/">People Work</Link>
+    <div className="flex flex-wrap items-center justify-between px-10 py-5 bg-gray-900 text-gray-100 shadow-md">
+      <Link className="font-bold text-3xl" to="/">People Work</Link>
       <div className="hidden md:flex">
-        <Link className="px-3 py-2 rounded-md hover:bg-gray-800" to="/">Home</Link>
-        <Link className="px-3 py-2 rounded-md hover:bg-gray-800" to="/about">About</Link>
-        <Link className="px-3 py-2 rounded-md hover:bg-gray-800" to="/contact">Contact</Link>
+        <Link className="px-3 py-2 text-xl rounded-md hover:bg-gray-800" to="/">Home</Link>
+        <Link className="px-3 py-2 text-xl rounded-md hover:bg-gray-800" to="/about">About</Link>
+        <Link className="px-3 py-2 text-xl rounded-md hover:bg-gray-800" to="/contact">Contact</Link>
         
       </div>
       <div className="md:hidden">
@@ -35,9 +35,9 @@ const HeaderMenu = () => {
           style={{ width: '50%' }}
         >
           <div className="py-1 rounded-md bg-white shadow-xs ">
-            <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" to="/contact">Home</Link>
-            <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" to="/about">About</Link>
-            <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" to="/contact">Contact</Link>
+            <Link className="block px-4 py-2 text-xl text-gray-700 hover:bg-gray-100" to="/contact">Home</Link>
+            <Link className="block px-4 py-2 text-xl text-gray-700 hover:bg-gray-100" to="/about">About</Link>
+            <Link className="block px-4 py-2 text-xl text-gray-700 hover:bg-gray-100" to="/contact">Contact</Link>
           </div>
         </div>
       </div>

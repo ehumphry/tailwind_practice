@@ -5,11 +5,13 @@ const Article = (props) => {
 
   return (
     <div
-    className="max-w-3xl mx-auto my-16 p-4 rounded-lg shadow-md"
+    className="max-w-3xl mx-auto my-16 p-4 rounded-lg shadow-md lg:px-6 xl:px-8 xxl:px-10"
       style={{ backgroundColor: color}}
     >
-      <p className="text-white text-xl font-bold">{props.title}</p>
-      <p className="text-gray-100 mt-2 text-base">{props.description}</p>
+      <p className="text-white text-3xl font-bold">{props.title}</p>
+      <p className="text-gray-100 mt-2 text-xl">{props.description}</p>
+      {props.outlook ? <p className="text-white text-3xl font-bold pt-10">Job Outlook</p> : null}
+      <p className="text-gray-100 mt-2 text-xl">{props.outlook}</p>
     </div>
   );
 };

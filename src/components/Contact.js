@@ -1,13 +1,15 @@
 import React from 'react';
 import HeaderMenu from './HeaderMenu';
+import ContactForm from './ContactForm';
 
 
 export default function Contact() {
     return (
       <>
         <HeaderMenu/>
-        <div>Contact Page</div>
-     
+        <ContactForm/>
       </>
     )
   }
+
+  
